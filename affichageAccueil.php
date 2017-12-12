@@ -11,11 +11,8 @@
         <p>Derniers billets du blog :</p>
 
 
-        <?php
-        while ($donnees = $req->fetch())
-        {
-
-            ?>
+        <?php foreach ($req as $donnees): ?>
+       
             <div class="news">
                 <h3>
                     <?php echo htmlspecialchars($donnees['titre']); ?>
@@ -31,10 +28,7 @@
                 </p>
             </div>
 
-            <?php
-        }
-        $req->closeCursor();
-        var_dump($donnees);
-        ?>
+            <?php endforeach: ?>
+     
 </body>
 </html>
