@@ -16,7 +16,7 @@
             <div class="news">
                 <h3>
                     <?php echo htmlspecialchars($donnees['titre']); ?>
-                    <em>le <?php echo $donnees['date_creation']; ?></em>
+                    <em>le <?php echo $donnees['date_creation_fr']; ?></em>
                 </h3>
 
                 <p>
@@ -28,7 +28,7 @@
                 </p>
             </div>
 
-            <?php endforeach: ?>
+            <?php endforeach; ?>
      
 </body>
 </html>
